@@ -1,4 +1,4 @@
-
+<?php include 'sendemail.php'; ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,17 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   </head>
   <body>
-
-    <!--alert messages start
-    <div class="alert-success">
-      <span>Message Sent! Thank you for contacting us.</span>
-    </div>
-    <div class="alert-error">
-      <span>Something went wrong! Please try again.</span>
-    </div>
-    alert messages end-->
-
-
+  <?php echo $alert; ?>
 
     <div class="main">
         <div class="navbar">
@@ -58,6 +48,13 @@
       </div>
     </div>
     <!--contact section end-->
-
+    <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
   </body>
 </html>
+
+
+  
